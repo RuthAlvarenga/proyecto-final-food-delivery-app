@@ -19,7 +19,7 @@ const Pedidos = () => {
                 {loading && (<Loading />)}
                 {error && (<Error error='Algo no funcionó' />)}
                 {pedidos && pedidos.map(pedido => {
-                    return <div className="col-md-8 m-2" style={{ backgroundColor: "#fec800", borderRadius: '10px' }}>
+                    return <div className="col-md-8 m-2" style={{ backgroundColor: "#fede68", borderRadius: '10px' }}>
                         <div className="flex-container" style={{display:'flex', flexDirection: 'row'}}>
                             <div className='text-left w-100 mx-2'>
                                 <h2 style={{ fontSize: '25px', marginBottom:'10px', borderBottom:'2px solid black', paddingTop: '10px'  }}>Items</h2>
