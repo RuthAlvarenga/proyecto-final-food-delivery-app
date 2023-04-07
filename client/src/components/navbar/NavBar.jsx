@@ -18,8 +18,8 @@ const NavBar = () => {
         <div>
             <nav style={{ backgroundColor: "#fec800" }} className="navbar navbar-expand-lg mb-4" >
                 <div>
-                    <img src={hamburger} className='img mx-3 mb-2' style={{width: "50px", height: "50px"}} />
-                    <a className="navbar-brand text-black mx-2 " style={{fontFamily: 'navfont', fontSize: '45px'}} href="/">Delicius Hamburger</a>
+                    <img src={hamburger} className='img mb-2' style={{width: "50px", height: "50px", marginLeft: '15px'}} />
+                    <a className="navbar-brand text-black mx-2 " style={{fontFamily: 'navfont', fontSize: '40px'}} href="/">Delicius Hamburger</a>
                 </div>
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
