@@ -1,0 +1,14 @@
+.admin{
+    background-color: #fec800;
+}
+.admin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.admin > li {
+    list-style: none;
+    
+
+}
