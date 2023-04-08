@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { v4: uuidv4 } = require('uuid');
-const stripe = require("stripe")("sk_test_51MrWNiLRJMywnLWXk18ARu1zn7UhLQRmZvjJCmwjld16a5NGnjCNP3MBuHkw2rFbSeE28Dxk4ukjtEsEz3vFbqGx007awpZEBC")
+const stripe = require("stripe")(process.env.STRIPE_TOKEN)
 const {Pedido} = require('../models/pedido.model')
 router.post('/placeorder', async (request, response) => {
 
