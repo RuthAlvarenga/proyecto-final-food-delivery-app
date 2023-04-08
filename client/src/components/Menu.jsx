@@ -69,7 +69,7 @@ const Menu = ({ menu }) => {
 
                 <Modal.Body>
                     <div className='d-flex flex-column align-items-center'>
-                        <img src={menu.image} style={{ height: "300px", width: "300px", marginTop: '10px' }} />
+                        <img src={menu.image} style={{ height: "300px", width: "300px", marginTop: '10px', borderRadius:'10px' }} />
                         <span style={{ marginLeft: '50px', marginTop: '10px', fontSize: '20px' }}>{menu.description}</span>
                     </div>
                     

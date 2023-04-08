@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+import Swal from 'sweetalert2';
 export const placeOrder = (token, pagTotal) =>async (dispatch, getState)=>{
 
     dispatch({type: 'PLACE_ORDER_REQ'})
@@ -10,10 +10,15 @@ export const placeOrder = (token, pagTotal) =>async (dispatch, getState)=>{
         const respuesta = await axios.post(`${process.env.REACT_APP_API_URL}/orders/placeorder`, {token, pagTotal, currentUser, ordenItems})
         dispatch({type: 'PLACE_ORDER_OK'})
         console.log(respuesta)
+        localStorage.removeItem('ordenItems')
+        window.location.href='/'
     } catch (error) {
         dispatch({type: 'PLACE_ORDER_FALLO'})
         console.log(error)
-        
+        Swal.fire({
+            icon: 'error',
+            text: 'Fallo en realizar el pago, registese o inicie sesión para continuar con el pago',
+        })
     }
 
 

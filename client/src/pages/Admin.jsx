@@ -21,10 +21,10 @@ const Admin = () => {
                 <h2 style={{ fontSize: '35px', marginBottom: '20px' }}>Panel del Administrador</h2>
 
                 <ul className='admin'>
-                    <li><Link style={{ textDecoration: 'none', color: 'black' }} to={'/listuser'}>Lista de Usuarios</Link></li>
-                    <li><Link style={{ textDecoration: 'none', color: 'black' }} to={'/listmenu'}>Lista de Menus</Link></li>
-                    <li><Link style={{ textDecoration: 'none', color: 'black' }} to={'/addmenu'}>Agregar un nuevo Menu</Link></li>
-                    <li><Link style={{ textDecoration: 'none', color: 'black' }} to={'/listpedido'}>Lista de Pedidos</Link></li>
+                    <li><Link style={{ textDecoration: 'none', color: 'black', fontSize:'20px', fontWeight: 'bold' }} to={'/listuser'}>Lista de Usuarios</Link></li>
+                    <li><Link style={{ textDecoration: 'none', color: 'black', fontSize:'20px', fontWeight: 'bold'}} to={'/listmenu'}>Lista de Menus</Link></li>
+                    <li><Link style={{ textDecoration: 'none', color: 'black', fontSize:'20px', fontWeight: 'bold' }} to={'/addmenu'}>Agregar un nuevo Menu</Link></li>
+                    <li><Link style={{ textDecoration: 'none', color: 'black', fontSize:'20px', fontWeight: 'bold'  }} to={'/listpedido'}>Lista de Pedidos</Link></li>
                 </ul>
 
             </div>
