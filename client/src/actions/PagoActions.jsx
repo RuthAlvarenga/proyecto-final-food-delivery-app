@@ -15,10 +15,7 @@ export const placeOrder = (token, pagTotal) =>async (dispatch, getState)=>{
     } catch (error) {
         dispatch({type: 'PLACE_ORDER_FALLO'})
         console.log(error)
-        Swal.fire({
-            icon: 'error',
-            text: 'Fallo en realizar el pago, registese o inicie sesión para continuar con el pago',
-        })
+
     }
 
 

@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 export const usuarioReg =(user)=> async dispatch =>{
     
@@ -8,6 +9,10 @@ export const usuarioReg =(user)=> async dispatch =>{
         const respuesta = await axios.post(`${process.env.REACT_APP_API_URL}/users/resgister`, user);
         console.log(respuesta);
         dispatch({type: 'REGISTRO_USUARIO_OK'})
+        Swal.fire({
+            icon: 'success',
+            text: 'El usuario se ha registrado correctamente, por favor Inicie sesión',
+        })
         window.location.href='/'
     } catch (error) {
         dispatch({type: 'REGISTRO_USUARIO_FALLO', payload: error})
